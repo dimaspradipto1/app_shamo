@@ -15,7 +15,7 @@ class _SplasPageState extends State<SplasPage> {
   void initState() {
     //?TODO: implement initState
     Timer(
-      Duration(seconds: 3),
+      const Duration(seconds: 3),
       () => Navigator.pushNamed(context, '/sign-in'),
     );
     super.initState();

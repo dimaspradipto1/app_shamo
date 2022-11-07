@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const SplasPage(),
-        '/sign-in': (context) => SignInPage(),
+        '/sign-in': (context) => const SignInPage(),
       },
     );
   }

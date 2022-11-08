@@ -1,8 +1,9 @@
+import 'package:app_shamo/pages/sign_in_page.dart';
 import 'package:flutter/material.dart';
 import 'package:app_shamo/theme.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({Key? key}) : super(key: key);
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class SignInPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Login',
+              'Sign Up',
               style: primariTextStyle.copyWith(
                 fontSize: 24,
                 fontWeight: semibold,
@@ -25,7 +26,7 @@ class SignInPage extends StatelessWidget {
               height: 2,
             ),
             Text(
-              'Sign In to Countinue',
+              'Register and Happy Shoping',
               style: secondariTextStyle,
             ),
           ],
@@ -33,10 +34,124 @@ class SignInPage extends StatelessWidget {
       );
     }
 
-    Widget emailinput() {
+    Widget nameInput() {
       return Container(
         margin: const EdgeInsets.only(
-          top: 70,
+          top: 50,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Full Name',
+              style: primariTextStyle.copyWith(
+                fontSize: 16,
+                fontWeight: medium,
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            Container(
+              height: 50,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              decoration: BoxDecoration(
+                color: backgroundColor2,
+                borderRadius: BorderRadius.circular(
+                  12,
+                ),
+              ),
+              child: Center(
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/icon_name.png',
+                      width: 17,
+                    ),
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    Expanded(
+                      child: TextFormField(
+                        style: primariTextStyle,
+                        decoration: InputDecoration.collapsed(
+                          hintText: 'Your Full Name',
+                          hintStyle: subTitleTextStyle,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    Widget userNameInput() {
+      return Container(
+        margin: const EdgeInsets.only(
+          top: 20,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Username',
+              style: primariTextStyle.copyWith(
+                fontSize: 16,
+                fontWeight: medium,
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            Container(
+              height: 50,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              decoration: BoxDecoration(
+                color: backgroundColor2,
+                borderRadius: BorderRadius.circular(
+                  12,
+                ),
+              ),
+              child: Center(
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/icon_username.png',
+                      width: 17,
+                    ),
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    Expanded(
+                      child: TextFormField(
+                        style: primariTextStyle,
+                        decoration: InputDecoration.collapsed(
+                          hintText: 'Your Username',
+                          hintStyle: subTitleTextStyle,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    Widget emailInput() {
+      return Container(
+        margin: const EdgeInsets.only(
+          top: 20,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -90,7 +205,7 @@ class SignInPage extends StatelessWidget {
       );
     }
 
-    Widget passwordinput() {
+    Widget passwordInput() {
       return Container(
         margin: const EdgeInsets.only(
           top: 20,
@@ -148,7 +263,7 @@ class SignInPage extends StatelessWidget {
       );
     }
 
-    Widget signInButton() {
+    Widget signUpButton() {
       return Container(
         height: 50,
         width: double.infinity,
@@ -168,7 +283,7 @@ class SignInPage extends StatelessWidget {
             ),
           ),
           child: Text(
-            'Sign In',
+            'Sign Up',
             style: primariTextStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
@@ -194,13 +309,15 @@ class SignInPage extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(
+                Navigator.push(
                   context,
-                  '/sign-up',
+                  MaterialPageRoute(
+                    builder: (context) => const SignInPage(),
+                  ),
                 );
               },
               child: Text(
-                'Sign Up',
+                'Sign in',
                 style: purpleTextStyle.copyWith(
                   fontSize: 12,
                   fontWeight: medium,
@@ -222,9 +339,11 @@ class SignInPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             header(),
-            emailinput(),
-            passwordinput(),
-            signInButton(),
+            nameInput(),
+            userNameInput(),
+            emailInput(),
+            passwordInput(),
+            signUpButton(),
             const Spacer(),
             footer(),
           ],

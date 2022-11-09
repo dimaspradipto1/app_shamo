@@ -156,7 +156,9 @@ class SignInPage extends StatelessWidget {
           top: 30,
         ),
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/home');
+          },
           style: TextButton.styleFrom(
             backgroundColor: primaryColor,
             shape: const RoundedRectangleBorder(

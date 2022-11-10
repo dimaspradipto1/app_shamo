@@ -53,9 +53,140 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget categories() {
+      return Container(
+        margin: EdgeInsets.only(
+          top: defaultMArgin,
+        ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              SizedBox(
+                width: defaultMArgin,
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
+                ),
+                margin: const EdgeInsets.only(
+                  right: 16,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: primaryColor,
+                ),
+                child: Text(
+                  'All Shoes',
+                  style: primariTextStyle.copyWith(
+                    fontSize: 13,
+                    fontWeight: medium,
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
+                ),
+                margin: EdgeInsets.only(
+                  right: defaultMArgin,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: const Color(0xff504F5E),
+                  ),
+                  color: transparentColor,
+                ),
+                child: Text(
+                  'Running',
+                  style: subTitleTextStyle.copyWith(
+                    fontSize: 13,
+                    fontWeight: light,
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
+                ),
+                margin: EdgeInsets.only(
+                  right: defaultMArgin,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: const Color(0xff504F5E),
+                  ),
+                  color: transparentColor,
+                ),
+                child: Text(
+                  'Training',
+                  style: subTitleTextStyle.copyWith(
+                    fontSize: 13,
+                    fontWeight: light,
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
+                ),
+                margin: EdgeInsets.only(
+                  right: defaultMArgin,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: const Color(0xff504F5E),
+                  ),
+                  color: transparentColor,
+                ),
+                child: Text(
+                  'Basketball',
+                  style: subTitleTextStyle.copyWith(
+                    fontSize: 13,
+                    fontWeight: light,
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
+                ),
+                margin: EdgeInsets.only(
+                  right: defaultMArgin,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: const Color(0xff504F5E),
+                  ),
+                  color: transparentColor,
+                ),
+                child: Text(
+                  'hiking',
+                  style: subTitleTextStyle.copyWith(
+                    fontSize: 13,
+                    fontWeight: light,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
     return ListView(
       children: [
         header(),
+        categories(),
       ],
     );
   }

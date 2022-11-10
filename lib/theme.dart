@@ -15,6 +15,7 @@ Color primaryTextColor = const Color(0xffF1F0F2);
 Color secondaryTextColor = const Color(0xff999999);
 Color subTitleColor = const Color(0xff504F5E);
 Color purpleColor = const Color(0xff6C5ECF);
+Color transparentColor = Colors.transparent;
 
 TextStyle primariTextStyle = GoogleFonts.poppins(
   color: primaryTextColor,

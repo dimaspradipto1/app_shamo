@@ -7,7 +7,7 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text(
-          'Profile Page',
+          "Profile Page",
           style: primariTextStyle,
         ),
       ),

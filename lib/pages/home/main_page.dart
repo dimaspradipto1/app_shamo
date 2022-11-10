@@ -1,6 +1,11 @@
+import 'package:app_shamo/pages/home/chat_page.dart';
+import 'package:app_shamo/pages/home/home_page.dart';
+import 'package:app_shamo/pages/home/profile_page.dart';
+import 'package:app_shamo/pages/home/wishlist_page.dart';
 import 'package:app_shamo/theme.dart';
 import 'package:flutter/material.dart';
 
+// ignore: use_key_in_widget_constructors
 class MainPage extends StatefulWidget {
   @override
   State<MainPage> createState() => _MainPageState();
@@ -114,25 +119,15 @@ class _MainPageState extends State<MainPage> {
     Widget body() {
       switch (currentIndex) {
         case 0:
-          return const Center(
-            child: Text('Home Page'),
-          );
+          return HomePage();
         case 1:
-          return const Center(
-            child: Text('Chat Page'),
-          );
+          return ChatPage();
         case 2:
-          return const Center(
-            child: Text('WishList Page'),
-          );
+          return WishListPage();
         case 3:
-          return const Center(
-            child: Text('Profile Page'),
-          );
+          return ProfilePage();
         default:
-          return const Center(
-            child: Text('Home Page'),
-          );
+          return HomePage();
       }
     }
 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:app_shamo/theme.dart';
 
 class SignUpPage extends StatelessWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+  var secondariTextStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -314,7 +314,7 @@ class SignUpPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const SignInPage(),
+                    builder: (context) => SignInPage(),
                   ),
                 );
               },

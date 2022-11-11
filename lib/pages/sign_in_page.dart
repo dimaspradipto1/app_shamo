@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:app_shamo/theme.dart';
 
 class SignInPage extends StatelessWidget {
-  const SignInPage({Key? key}) : super(key: key);
+  var secondariTextStyle;
 
   @override
   Widget build(BuildContext context) {

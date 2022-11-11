@@ -16,12 +16,13 @@ Color secondaryTextColor = const Color(0xff999999);
 Color subTitleColor = const Color(0xff504F5E);
 Color purpleColor = const Color(0xff6C5ECF);
 Color transparentColor = Colors.transparent;
+Color blackColor = const Color(0xff2E2E2E);
 
 TextStyle primariTextStyle = GoogleFonts.poppins(
   color: primaryTextColor,
 );
 
-TextStyle secondariTextStyle = GoogleFonts.poppins(
+TextStyle secondaryTextStyle = GoogleFonts.poppins(
   color: secondaryTextColor,
 );
 
@@ -37,6 +38,9 @@ TextStyle purpleTextStyle = GoogleFonts.poppins(
   color: purpleColor,
 );
 
+TextStyle blackTextStyle = GoogleFonts.poppins(
+  color: blackColor,
+);
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;
 FontWeight medium = FontWeight.w500;

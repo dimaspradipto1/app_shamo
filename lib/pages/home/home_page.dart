@@ -1,4 +1,5 @@
 import 'package:app_shamo/theme.dart';
+import 'package:app_shamo/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -183,10 +184,53 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget popularProductTitle() {
+      return Container(
+        margin: EdgeInsets.only(
+          top: defaultMArgin,
+          left: defaultMArgin,
+        ),
+        child: Text(
+          'Popular Product',
+          style: primariTextStyle.copyWith(
+            fontSize: 22,
+            fontWeight: semiBold,
+          ),
+        ),
+      );
+    }
+
+    Widget popularProduct() {
+      return Container(
+        margin: const EdgeInsets.only(
+          top: 14,
+        ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              SizedBox(
+                width: defaultMArgin,
+              ),
+              Row(
+                children: [
+                  ProductCard(),
+                  ProductCard(),
+                  ProductCard(),
+                ],
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
     return ListView(
       children: [
         header(),
         categories(),
+        popularProductTitle(),
+        popularProduct(),
       ],
     );
   }

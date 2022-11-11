@@ -2,6 +2,8 @@ import 'package:app_shamo/theme.dart';
 import 'package:flutter/material.dart';
 
 class ProductTile extends StatelessWidget {
+  var semiBold;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,6 +25,37 @@ class ProductTile extends StatelessWidget {
           ),
           const SizedBox(
             width: 12,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Football',
+                style: secondaryTextStyle.copyWith(
+                  fontSize: 12,
+                ),
+              ),
+              const SizedBox(
+                height: 6,
+              ),
+              Text(
+                'Predator 20.3 Firm Ground',
+                style: primariTextStyle.copyWith(
+                  fontSize: 14,
+                  fontWeight: semiBold,
+                ),
+              ),
+              const SizedBox(
+                height: 6,
+              ),
+              Text(
+                '\$ 68,47',
+                style: priceTextStyle.copyWith(
+                  fontSize: 14,
+                  fontWeight: semiBold,
+                ),
+              ),
+            ],
           ),
         ],
       ),

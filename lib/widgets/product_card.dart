@@ -2,7 +2,7 @@ import 'package:app_shamo/theme.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
-  var semiBold;
+  dynamic semiBold;
 
   @override
   Widget build(BuildContext context) {

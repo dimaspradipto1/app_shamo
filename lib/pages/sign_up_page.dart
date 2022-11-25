@@ -2,8 +2,11 @@ import 'package:app_shamo/pages/sign_in_page.dart';
 import 'package:flutter/material.dart';
 import 'package:app_shamo/theme.dart';
 
+// ignore: must_be_immutable
 class SignUpPage extends StatelessWidget {
-  var secondariTextStyle;
+  dynamic secondariTextStyle;
+
+  SignUpPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,7 @@ class SignUpPage extends StatelessWidget {
               'Sign Up',
               style: primariTextStyle.copyWith(
                 fontSize: 24,
-                fontWeight: semibold,
+                fontWeight: semiBold,
               ),
             ),
             const SizedBox(

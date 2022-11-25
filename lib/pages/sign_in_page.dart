@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:app_shamo/theme.dart';
 
+// ignore: must_be_immutable
 class SignInPage extends StatelessWidget {
+  // ignore: prefer_typing_uninitialized_variables
   var secondariTextStyle;
+
+  SignInPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +22,7 @@ class SignInPage extends StatelessWidget {
               'Login',
               style: primariTextStyle.copyWith(
                 fontSize: 24,
-                fontWeight: semibold,
+                fontWeight: semiBold,
               ),
             ),
             const SizedBox(
@@ -124,7 +128,7 @@ class SignInPage extends StatelessWidget {
                   children: [
                     Image.asset(
                       'assets/icon_password.png',
-                      width: 17,
+                      width: 18,
                     ),
                     const SizedBox(
                       width: 16,

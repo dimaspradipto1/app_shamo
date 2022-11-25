@@ -121,11 +121,11 @@ class _MainPageState extends State<MainPage> {
         case 0:
           return HomePage();
         case 1:
-          return ChatPage();
+          return const ChatPage();
         case 2:
-          return WishListPage();
+          return const WishListPage();
         case 3:
-          return ProfilePage();
+          return const ProfilePage();
         default:
           return HomePage();
       }

@@ -12,9 +12,9 @@ class HomePage extends StatelessWidget {
     Widget header() {
       return Container(
         margin: EdgeInsets.only(
-          top: defaultMArgin,
-          left: defaultMArgin,
-          right: defaultMArgin,
+          top: defaultMargin,
+          left: defaultMargin,
+          right: defaultMargin,
         ),
         child: Row(
           children: [
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text(
                     'Hallo, Dimas Pradipto',
-                    style: primariTextStyle.copyWith(
+                    style: primaryTextStyle.copyWith(
                       fontSize: 24,
                       fontWeight: semiBold,
                     ),
@@ -58,14 +58,14 @@ class HomePage extends StatelessWidget {
     Widget categories() {
       return Container(
         margin: EdgeInsets.only(
-          top: defaultMArgin,
+          top: defaultMargin,
         ),
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
               SizedBox(
-                width: defaultMArgin,
+                width: defaultMargin,
               ),
               Container(
                 padding: const EdgeInsets.symmetric(
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
                 ),
                 child: Text(
                   'All Shoes',
-                  style: primariTextStyle.copyWith(
+                  style: primaryTextStyle.copyWith(
                     fontSize: 13,
                     fontWeight: medium,
                   ),
@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
                   vertical: 10,
                 ),
                 margin: EdgeInsets.only(
-                  right: defaultMArgin,
+                  right: defaultMargin,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
@@ -116,7 +116,7 @@ class HomePage extends StatelessWidget {
                   vertical: 10,
                 ),
                 margin: EdgeInsets.only(
-                  right: defaultMArgin,
+                  right: defaultMargin,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
                   vertical: 10,
                 ),
                 margin: EdgeInsets.only(
-                  right: defaultMArgin,
+                  right: defaultMargin,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
@@ -162,7 +162,7 @@ class HomePage extends StatelessWidget {
                   vertical: 10,
                 ),
                 margin: EdgeInsets.only(
-                  right: defaultMArgin,
+                  right: defaultMargin,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
@@ -188,12 +188,12 @@ class HomePage extends StatelessWidget {
     Widget popularProductTitle() {
       return Container(
         margin: EdgeInsets.only(
-          top: defaultMArgin,
-          left: defaultMArgin,
+          top: defaultMargin,
+          left: defaultMargin,
         ),
         child: Text(
           'Popular Product',
-          style: primariTextStyle.copyWith(
+          style: primaryTextStyle.copyWith(
             fontSize: 22,
             fontWeight: semiBold,
           ),
@@ -211,7 +211,7 @@ class HomePage extends StatelessWidget {
           child: Row(
             children: [
               SizedBox(
-                width: defaultMArgin,
+                width: defaultMargin,
               ),
               Row(
                 children: [
@@ -229,12 +229,12 @@ class HomePage extends StatelessWidget {
     Widget newArrivalsTitle() {
       return Container(
         margin: EdgeInsets.only(
-          top: defaultMArgin,
-          left: defaultMArgin,
+          top: defaultMargin,
+          left: defaultMargin,
         ),
         child: Text(
           'New Arrivals',
-          style: primariTextStyle.copyWith(
+          style: primaryTextStyle.copyWith(
             fontSize: 22,
             fontWeight: semiBold,
           ),

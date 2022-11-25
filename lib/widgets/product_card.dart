@@ -13,7 +13,7 @@ class ProductCard extends StatelessWidget {
       width: 215,
       height: 278,
       margin: EdgeInsets.only(
-        right: defaultMArgin,
+        right: defaultMargin,
       ),
       decoration: BoxDecoration(
         color: const Color(0xffF1F0F2),

@@ -20,7 +20,7 @@ class SignInPage extends StatelessWidget {
           children: [
             Text(
               'Login',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 24,
                 fontWeight: semiBold,
               ),
@@ -47,7 +47,7 @@ class SignInPage extends StatelessWidget {
           children: [
             Text(
               'Email Address',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 16,
                 fontWeight: medium,
               ),
@@ -78,7 +78,7 @@ class SignInPage extends StatelessWidget {
                     ),
                     Expanded(
                       child: TextFormField(
-                        style: primariTextStyle,
+                        style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Your Email Address',
                           hintStyle: subTitleTextStyle,
@@ -104,7 +104,7 @@ class SignInPage extends StatelessWidget {
           children: [
             Text(
               'Password',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 16,
                 fontWeight: medium,
               ),
@@ -135,7 +135,7 @@ class SignInPage extends StatelessWidget {
                     ),
                     Expanded(
                       child: TextFormField(
-                        style: primariTextStyle,
+                        style: primaryTextStyle,
                         obscureText: true,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Your Password',
@@ -175,7 +175,7 @@ class SignInPage extends StatelessWidget {
           ),
           child: Text(
             'Sign In',
-            style: primariTextStyle.copyWith(
+            style: primaryTextStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -222,7 +222,7 @@ class SignInPage extends StatelessWidget {
       backgroundColor: backgroundColor1,
       body: Container(
         margin: EdgeInsets.symmetric(
-          horizontal: defaultMArgin,
+          horizontal: defaultMargin,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

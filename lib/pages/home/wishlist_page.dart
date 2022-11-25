@@ -11,7 +11,7 @@ class WishListPage extends StatelessWidget {
       body: Center(
         child: Text(
           "WishList Page",
-          style: primariTextStyle,
+          style: primaryTextStyle,
         ),
       ),
     );

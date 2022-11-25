@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-double defaultMArgin = 30.0;
+double defaultMargin = 30.0;
 
 Color primaryColor = const Color(0xff6C5ECF);
 Color secondaryColor = const Color(0xff38ABBE);
@@ -18,7 +18,7 @@ Color purpleColor = const Color(0xff6C5ECF);
 Color transparentColor = Colors.transparent;
 Color blackColor = const Color(0xff2E2E2E);
 
-TextStyle primariTextStyle = GoogleFonts.poppins(
+TextStyle primaryTextStyle = GoogleFonts.poppins(
   color: primaryTextColor,
 );
 

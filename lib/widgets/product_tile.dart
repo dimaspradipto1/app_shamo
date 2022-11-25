@@ -12,9 +12,9 @@ class ProductTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        left: defaultMArgin,
-        right: defaultMArgin,
-        bottom: defaultMArgin,
+        left: defaultMargin,
+        right: defaultMargin,
+        bottom: defaultMargin,
       ),
       child: Row(
         children: [
@@ -44,7 +44,7 @@ class ProductTile extends StatelessWidget {
               ),
               Text(
                 'Predator 20.3 Firm Ground',
-                style: primariTextStyle.copyWith(
+                style: primaryTextStyle.copyWith(
                   fontSize: 14,
                   fontWeight: semiBold,
                 ),

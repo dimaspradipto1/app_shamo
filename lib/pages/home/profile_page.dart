@@ -10,7 +10,7 @@ class ProfilePage extends StatelessWidget {
       body: Center(
         child: Text(
           "Profile Page",
-          style: primariTextStyle,
+          style: primaryTextStyle,
         ),
       ),
     );

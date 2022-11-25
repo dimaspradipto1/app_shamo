@@ -20,7 +20,7 @@ class SignUpPage extends StatelessWidget {
           children: [
             Text(
               'Sign Up',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 24,
                 fontWeight: semiBold,
               ),
@@ -47,7 +47,7 @@ class SignUpPage extends StatelessWidget {
           children: [
             Text(
               'Full Name',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 16,
                 fontWeight: medium,
               ),
@@ -78,7 +78,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                     Expanded(
                       child: TextFormField(
-                        style: primariTextStyle,
+                        style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Your Full Name',
                           hintStyle: subTitleTextStyle,
@@ -104,7 +104,7 @@ class SignUpPage extends StatelessWidget {
           children: [
             Text(
               'Username',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 16,
                 fontWeight: medium,
               ),
@@ -135,7 +135,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                     Expanded(
                       child: TextFormField(
-                        style: primariTextStyle,
+                        style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Your Username',
                           hintStyle: subTitleTextStyle,
@@ -161,7 +161,7 @@ class SignUpPage extends StatelessWidget {
           children: [
             Text(
               'Email Address',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 16,
                 fontWeight: medium,
               ),
@@ -192,7 +192,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                     Expanded(
                       child: TextFormField(
-                        style: primariTextStyle,
+                        style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Your Email Address',
                           hintStyle: subTitleTextStyle,
@@ -218,7 +218,7 @@ class SignUpPage extends StatelessWidget {
           children: [
             Text(
               'Password',
-              style: primariTextStyle.copyWith(
+              style: primaryTextStyle.copyWith(
                 fontSize: 16,
                 fontWeight: medium,
               ),
@@ -249,7 +249,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                     Expanded(
                       child: TextFormField(
-                        style: primariTextStyle,
+                        style: primaryTextStyle,
                         obscureText: true,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Your Password',
@@ -289,7 +289,7 @@ class SignUpPage extends StatelessWidget {
           ),
           child: Text(
             'Sign Up',
-            style: primariTextStyle.copyWith(
+            style: primaryTextStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -338,7 +338,7 @@ class SignUpPage extends StatelessWidget {
       backgroundColor: backgroundColor1,
       body: Container(
         margin: EdgeInsets.symmetric(
-          horizontal: defaultMArgin,
+          horizontal: defaultMargin,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

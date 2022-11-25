@@ -1,3 +1,4 @@
+import 'package:app_shamo/widgets/chat_tile.dart';
 import 'package:flutter/material.dart';
 import '../../theme.dart';
 
@@ -12,7 +13,7 @@ class ChatPage extends StatelessWidget {
         centerTitle: true,
         title: Text(
           'Message Support',
-          style: primariTextStyle.copyWith(
+          style: primaryTextStyle.copyWith(
             fontSize: 18,
             fontWeight: medium,
           ),
@@ -22,7 +23,7 @@ class ChatPage extends StatelessWidget {
       );
     }
 
-    Widget content() {
+    Widget emptyChat() {
       return Expanded(
         child: Container(
           width: double.infinity,
@@ -39,7 +40,7 @@ class ChatPage extends StatelessWidget {
               ),
               Text(
                 'Opss no message yet?',
-                style: primariTextStyle.copyWith(
+                style: primaryTextStyle.copyWith(
                   fontSize: 16,
                   fontWeight: medium,
                 ),
@@ -72,13 +73,30 @@ class ChatPage extends StatelessWidget {
                   ),
                   child: Text(
                     'Explore Store',
-                    style: primariTextStyle.copyWith(
+                    style: primaryTextStyle.copyWith(
                       fontSize: 16,
                       fontWeight: medium,
                     ),
                   ),
                 ),
               ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    Widget content() {
+      return Expanded(
+        child: Container(
+          width: double.infinity,
+          color: backgroundColor3,
+          child: ListView(
+            padding: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+            ),
+            children: const [
+              ChatTile(),
             ],
           ),
         ),

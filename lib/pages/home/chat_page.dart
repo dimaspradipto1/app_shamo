@@ -1,6 +1,6 @@
 import 'package:app_shamo/widgets/chat_tile.dart';
 import 'package:flutter/material.dart';
-import '../../theme.dart';
+import 'package:app_shamo/theme.dart';
 
 class ChatPage extends StatelessWidget {
   const ChatPage({Key? key}) : super(key: key);
@@ -90,7 +90,7 @@ class ChatPage extends StatelessWidget {
       return Expanded(
         child: Container(
           width: double.infinity,
-          color: backgroundColor3,
+          color: backgroundColor1,
           child: ListView(
             padding: EdgeInsets.symmetric(
               horizontal: defaultMargin,
@@ -107,6 +107,7 @@ class ChatPage extends StatelessWidget {
       children: [
         header(),
         content(),
+        // emptyChat(),
       ],
     );
   }

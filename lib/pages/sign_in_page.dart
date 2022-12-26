@@ -30,7 +30,7 @@ class SignInPage extends StatelessWidget {
             ),
             Text(
               'Sign In to Countinue',
-              style: secondariTextStyle,
+              style: subTitleTextStyle,
             ),
           ],
         ),

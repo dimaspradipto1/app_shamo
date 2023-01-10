@@ -1,4 +1,5 @@
 import 'package:app_shamo/pages/cart_page.dart';
+import 'package:app_shamo/pages/checkout_page.dart';
 import 'package:app_shamo/pages/edit_profile_page.dart';
 import 'package:app_shamo/pages/home/detail_caht_page.dart';
 import 'package:app_shamo/pages/home/main_page.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/edit-profile': (context) => const EditProfilePage(),
         '/product': (context) => ProductPage(),
         '/cart': (context) => CartPage(),
+        '/checkout': (context) => CheckoutPage(),
       },
     );
   }
